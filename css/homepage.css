@@ -6,6 +6,7 @@
 
 main {
     background-color: black;
+    display: flex;
 }
 
 #menu {
@@ -30,7 +31,7 @@ main {
     height:80px;
 }
 
-#logo-icone {
+#icone {
     width: 25px;
     margin-left: 14px;
 }
@@ -59,13 +60,6 @@ a {
     font-size: 15px;
 }
 
-#biblioteca h3 {
-    color: white;
-    margin-left: 5px;
-    margin-top: 7px;
-    font-size: 15px;
-}
-
 #resto-menu {
     margin-left: 10px;
     margin-top: 10px;
@@ -83,6 +77,13 @@ a {
     margin-bottom: 20px;
 }
 
+#biblioteca h3 {
+    color: white;
+    margin-left: 5px;
+    margin-top: 7px;
+    font-size: 15px;
+}
+
 #playlist {
     background-color: rgb(50, 50, 50);
     margin-left: 10px;
@@ -90,13 +91,22 @@ a {
     border-radius: 7px;
 }
 
-#playlist h2 {
+#podcast {
+    background-color: rgb(50, 50, 50);
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 7px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+#playlist h2, #podcast h2 {
     font-size: 14px;
     margin-top: 5px;
     margin-left: 10px;
 }
 
-#playlist h3 {
+#playlist h3, #podcast h3 {
     font-size: 13px;
     margin-top: 5px;
     margin-left: 10px;
@@ -114,27 +124,6 @@ a {
     font-weight: bold;
     font-family: "Gotham", sans-serif;
     margin-bottom: 10px;
-}
-
-#podcast {
-    background-color: rgb(50, 50, 50);
-    margin-left: 10px;
-    margin-right: 10px;
-    border-radius: 7px;
-    margin-top: 25px;
-}
-
-#podcast h2 {
-    font-size: 14px;
-    margin-top: 5px;
-    margin-left: 10px;
-}
-
-#podcast h3 {
-    font-size: 13px;
-    margin-top: 5px;
-    margin-left: 10px;
-    font-weight: 300;
 }
 
 #podcast button {
@@ -161,4 +150,134 @@ a {
     list-style-type: none;
     margin-top: 5px;
     margin-bottom: 5px;
+}
+
+button {
+    cursor: pointer;
+}
+
+#comeco-menu h3, #biblioteca h3 {
+    font-weight: 400;
+}
+
+#comeco-menu h3:hover, #biblioteca h3:hover {
+    font-weight: bold;
+}
+
+#principal {
+    width: 77%;
+    color: white;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+#nav {
+    background-color: rgb(20, 20, 20);
+    height: 60px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    
+}
+
+#seta-esq {
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+#seta-esq, #seta-dir {
+    filter: brightness(0.5);
+    width: 20px;
+    cursor: not-allowed;
+}
+
+#principal #nav a {
+    color: rgb(170, 170, 170);
+    font-weight: 600;
+}
+
+#principal #nav button {
+    width: 100px;
+    height: 50px;
+    border-radius: 50px;
+    margin-left: 20px;
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#insc-ent {
+    margin-left: 900px;
+    margin-top: -40px;
+}
+
+#artistas-pop {
+    background-image: linear-gradient(rgb(42, 42, 42), black);
+}
+
+.img-artista {
+    width: 210px;
+    border-radius: 100px;
+}
+
+#artistas-pop h2 {
+    margin-left: 20px;
+    padding-top: 35px;
+}
+
+.info-artista {
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+.nome-artista {
+    margin-top: 5px;
+    font-size: 15px;
+}
+
+.desc-artista {
+    margin-top: 5px;
+    font-size: 14px;
+    color: lightgray;
+}
+
+.artistas {
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+
+
+.img-album {
+    width: 210px;
+}
+
+#albuns-pop h2 {
+    margin-left: 20px;
+    padding-top: 35px;
+}
+
+.info-album {
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+.nome-album {
+    margin-top: 5px;
+    font-size: 15px;
+}
+
+.desc-album {
+    margin-top: 5px;
+    font-size: 14px;
+    color: lightgray;
+}
+
+.albuns {
+    display: flex;
+    flex-direction: row;
 }
