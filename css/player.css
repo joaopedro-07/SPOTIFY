@@ -24,11 +24,18 @@ main {
     flex-direction: column;
     color: white;
     background-color: rgb(20, 20, 20);
+
 }
 
-#logo-spotify {
-    width: 120px;
-    height:80px;
+.logo #logo-spotify {
+    width:55px;
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+
+.logo #logo-spotify img {
+    width:55%;
+    margin-bottom: 40px;
 }
 
 #icone {
