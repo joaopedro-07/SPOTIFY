@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Gothan", sans-serif;
+}
+
+main {
+    background-color: black;
+    display: flex;
+}
+
+#menu {
+    display: flex;
+    flex-direction: column;
+    width: 23%;
+    height: 100vh;
+}
+
+#comeco-menu {
+    margin-left: 10px;
+    margin-top: 10px;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background-color: rgb(20, 20, 20);
+}
+
+#logo-spotify {
+    width: 120px;
+    height:80px;
+}
+
+#icone {
+    width: 25px;
+    margin-left: 14px;
+}
+
+#inicio {
+    display: flex;
+    flex-direction: row;
+    margin-top: -20px;
+}
+
+#buscar {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+#comeco-menu h3 {
+    color: white;
+    margin-left: 5px;
+    margin-top: 7px;
+    font-size: 15px;
+}
+
+#resto-menu {
+    margin-left: 10px;
+    margin-top: 10px;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background-color: rgb(20, 20, 20);
+}
+
+#biblioteca {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#biblioteca h3 {
+    color: white;
+    margin-left: 5px;
+    margin-top: 7px;
+    font-size: 15px;
+}
+
+#playlist {
+    background-color: rgb(50, 50, 50);
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 7px;
+}
+
+#podcast {
+    background-color: rgb(50, 50, 50);
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 7px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+#playlist h2, #podcast h2 {
+    font-size: 14px;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+#playlist h3, #podcast h3 {
+    font-size: 13px;
+    margin-top: 5px;
+    margin-left: 10px;
+    font-weight: 300;
+}
+
+#playlist button {
+    border-radius: 50px;
+    width: 110px;
+    height: 30px;
+    margin-left: 10px;
+    margin-top: 15px;
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: "Gotham", sans-serif;
+    margin-bottom: 10px;
+}
+
+#podcast button {
+    border-radius: 50px;
+    width: 150px;
+    height: 30px;
+    margin-left: 10px;
+    margin-top: 15px;
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: "Gotham", sans-serif;
+    margin-bottom: 10px;
+}
+
+#footer {
+    color: gray;
+    font-size: 13px;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+#footer ul li {
+    list-style-type: none;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+button {
+    cursor: pointer;
+}
+
+#comeco-menu h3, #biblioteca h3 {
+    font-weight: 400;
+}
+
+#comeco-menu h3:hover, #biblioteca h3:hover {
+    font-weight: bold;
+}
+
+#principal {
+    width: 77%;
+    color: white;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+#nav {
+    background-color: rgb(20, 20, 20);
+    height: 60px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    
+}
+
+#seta-esq {
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+#seta-esq, #seta-dir {
+    filter: brightness(0.5);
+    width: 20px;
+    cursor: not-allowed;
+}
+
+#principal #nav a {
+    color: rgb(170, 170, 170);
+    font-weight: 600;
+}
+
+#principal #nav button {
+    width: 100px;
+    height: 50px;
+    border-radius: 50px;
+    margin-left: 20px;
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#insc-ent {
+    margin-left: 900px;
+    margin-top: -40px;
+}

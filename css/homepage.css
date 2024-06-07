@@ -178,7 +178,6 @@ button {
     height: 60px;
     border-top-left-radius: 7px;
     border-top-right-radius: 7px;
-    
 }
 
 #seta-esq {
@@ -247,10 +246,6 @@ button {
     display: flex;
     flex-direction: row;
 }
-
-
-
-
 
 .img-album {
     width: 210px;
