@@ -27,9 +27,10 @@ main {
 }
 
 .logo #logo-spotify {
-    width:55px;
-    margin-bottom: 40px;
-    margin-top: 10px;
+    width:80px;
+    margin-bottom: 32px;
+    margin-top: 20px;
+    margin-left: 15px;
 }
 
 .logo #logo-spotify img {
@@ -40,6 +41,7 @@ main {
 #icone {
     width: 25px;
     margin-left: 14px;
+    filter: brightness(0.7);
 }
 
 #inicio {
@@ -60,7 +62,7 @@ a {
 }
 
 #comeco-menu h3 {
-    color: white;
+    color: rgb(184, 184, 184);
     margin-left: 5px;
     margin-top: 7px;
     font-size: 15px;
@@ -84,7 +86,7 @@ a {
 }
 
 #biblioteca h3 {
-    color: white;
+    color: rgb(184, 184, 184);
     margin-left: 5px;
     margin-top: 7px;
     font-size: 15px;
@@ -156,6 +158,11 @@ a {
     list-style-type: none;
     margin-top: 5px;
     margin-bottom: 5px;
+    font-size: 11px;
+}
+
+#footer ul li:hover {
+    cursor: pointer;
 }
 
 button {
@@ -167,7 +174,7 @@ button {
 }
 
 #comeco-menu h3:hover, #biblioteca h3:hover {
-    font-weight: bold;
+    color: white;
 }
 
 #principal {
@@ -190,12 +197,16 @@ button {
     margin-top: 20px;
     margin-left: 20px;
     margin-right: 10px;
+    cursor: not-allowed;
 }
 
 #seta-esq, #seta-dir {
     filter: brightness(0.5);
     width: 20px;
-    cursor: not-allowed;
+}
+
+#seta-dir {
+    cursor: pointer;
 }
 
 #principal #nav a {
@@ -234,7 +245,8 @@ button {
 
 .info-artista {
     margin-top: 15px;
-    margin-left: 20px;
+    margin-left: 10px;
+    padding-left: 5px;
 }
 
 .nome-artista {
@@ -265,6 +277,7 @@ button {
 .info-album {
     margin-top: 15px;
     margin-left: 20px;
+    padding-left: ;
 }
 
 .nome-album {
@@ -281,4 +294,82 @@ button {
 .albuns {
     display: flex;
     flex-direction: row;
+}
+
+#footer button {
+    display: flex;
+    background-color: rgb(20, 20, 20);
+    width: 180px;
+    height: 30px;
+    margin-left: 7px;
+    margin-top: 20px;
+    border-radius: 50px;
+    border: 1px solid gray;
+}
+
+#footer button img {
+    width: 20px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+#footer button h3 {
+    color: white;
+    font-weight: 600;
+    margin-top: 8px;
+    margin-left: 3px;
+    font-size: 14px;
+}
+
+#footer button:hover {
+    border: 1px solid white;
+}
+
+.title-subtitle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.title-subtitle h3 {
+    margin-top: 40px;
+    margin-right: 20px;
+    color: rgb(184, 184, 184);
+    font-size: 14px;
+}
+
+.title-subtitle h2:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.title-subtitle h3:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#resto-menu #bibli-soma {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 82%;
+}
+
+#sinal-mais {
+    width: 18px;
+    height: 18px;
+    margin-top: 5px;
+}
+
+#sinal-mais:hover {
+    background-color: rgb(47, 47, 47);
+    border-radius: 10px;
+}
+
+#comeco-menu #icone:hover {
+    filter: brightness(1.0);
+}
+
+.info-artista:hover {
+    background-color: rgb(30, 30, 30);
 }
