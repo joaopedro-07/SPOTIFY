@@ -1,149 +1,80 @@
 <!-- Kaique Ferreira João Machado -->
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/player.css">
     <link rel="shortcut icon" href="../img/spotify-verde.png" type="image/x-icon">
-    <title>Coldplay | Spotify</title>
+    <title>ColdPlay | Spotify</title>
 </head>
-
 <body>
-    <div class="menu">
-        <div class="menu1">
-            <div class="logo">
-                <a href="homepage.html"><img src="../img/spotify logo.png" alt=""></a>
+    <main>
+        <div id="menu">
+            <div id="comeco-menu">
+                <div class="logo">
+                    <a href="homepage.html"><img id="logo-spotify" src="../img/spotify logo.png" alt="" title="Spotify"></a>
+                </div>
+                <a id="inicio" href="homepage.html"><img id="icone" src="../img/casa.png" alt=""><h3>Início</h3></a>
+                <a id="buscar" href="homepage.html"><img id="icone" src="../img/lupa.png" alt=""><h3>Buscar</h3></a>
             </div>
-
-            <ul>
-                <li><a href="">
-                        <span><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="33" height="33"
-                                viewBox="0,0,300,150" style="fill:#FFFFFF;">
-                                <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1"
-                                    stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10"
-                                    stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none"
-                                    font-size="none" text-anchor="none" style="mix-blend-mode: normal">
-                                    <g transform="scale(5.33333,5.33333)">
-                                        <path
-                                            d="M23.95117,4c-0.31984,0.01092 -0.62781,0.12384 -0.87891,0.32227l-14.21289,11.19727c-1.8039,1.42163 -2.85937,3.59398 -2.85937,5.89063v19.08984c0,1.36359 1.13641,2.5 2.5,2.5h10c1.36359,0 2.5,-1.13641 2.5,-2.5v-10c0,-0.29504 0.20496,-0.5 0.5,-0.5h5c0.29504,0 0.5,0.20496 0.5,0.5v10c0,1.36359 1.13641,2.5 2.5,2.5h10c1.36359,0 2.5,-1.13641 2.5,-2.5v-19.08984c0,-2.29665 -1.05548,-4.46899 -2.85937,-5.89062l-14.21289,-11.19727c-0.27738,-0.21912 -0.62324,-0.33326 -0.97656,-0.32227zM24,7.41016l13.28516,10.4668c1.0841,0.85437 1.71484,2.15385 1.71484,3.5332v18.58984h-9v-9.5c0,-1.91495 -1.58505,-3.5 -3.5,-3.5h-5c-1.91495,0 -3.5,1.58505 -3.5,3.5v9.5h-9v-18.58984c0,-1.37935 0.63074,-2.67883 1.71484,-3.5332z">
-                                        </path>
-                                    </g>
-                                </g>
-                            </svg></span>
-                        <p id="inicio">Inicio</p>
-                    </a></li>
-
-                <li><a href="">
-                        <span><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="33" height="33"
-                                viewBox="0,0,300,150" style="fill:#FFFFFF;">
-                                <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1"
-                                    stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10"
-                                    stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none"
-                                    font-size="none" text-anchor="none" style="mix-blend-mode: normal">
-                                    <g transform="scale(5.33333,5.33333)">
-                                        <path
-                                            d="M20.5,6c-7.99037,0 -14.5,6.50964 -14.5,14.5c0,7.99036 6.50963,14.5 14.5,14.5c3.45636,0 6.63371,-1.22096 9.12891,-3.25l9.81055,9.81055c0.37623,0.39185 0.9349,0.54969 1.46055,0.41265c0.52565,-0.13704 0.93616,-0.54754 1.07319,-1.07319c0.13704,-0.52565 -0.0208,-1.08432 -0.41265,-1.46055l-9.81055,-9.81055c2.02904,-2.4952 3.25,-5.67255 3.25,-9.12891c0,-7.99036 -6.50963,-14.5 -14.5,-14.5zM20.5,9c6.36905,0 11.5,5.13096 11.5,11.5c0,3.10261 -1.2238,5.90572 -3.20898,7.9707c-0.12237,0.08994 -0.23037,0.19794 -0.32031,0.32031c-2.06499,1.98518 -4.86809,3.20898 -7.9707,3.20898c-6.36905,0 -11.5,-5.13096 -11.5,-11.5c0,-6.36904 5.13095,-11.5 11.5,-11.5z">
-                                        </path>
-                                    </g>
-                                </g>
-                            </svg></span>
-                        <span id="buscar">Buscar</span>
-                    </a></li>
-            </ul>
-        </div>
-
-        <div class="menu2">
-            <ul>
-                <li><a href="">
-                        <span><svg xmlns="http://www.w3.org/2000/svg" style="fill:#A7A7A7;" width="33" height="33"
-                                viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                                <path
-                                    d="M249.6 471.5c10.8 3.8 22.4-4.1 22.4-15.5V78.6c0-4.2-1.6-8.4-5-11C247.4 52 202.4 32 144 32C93.5 32 46.3 45.3 18.1 56.1C6.8 60.5 0 71.7 0 83.8V454.1c0 11.9 12.8 20.2 24.1 16.5C55.6 460.1 105.5 448 144 448c33.9 0 79 14 105.6 23.5zm76.8 0C353 462 398.1 448 432 448c38.5 0 88.4 12.1 119.9 22.6c11.3 3.8 24.1-4.6 24.1-16.5V83.8c0-12.1-6.8-23.3-18.1-27.6C529.7 45.3 482.5 32 432 32c-58.4 0-103.4 20-123 35.6c-3.3 2.6-5 6.8-5 11V456c0 11.4 11.7 19.3 22.4 15.5z" />
-                            </svg></span>
-                        <span id="biblioteca">Sua biblioteca</span>
-                    </a></li>
-
-                <li>
-                    <div class="scrol">
-                        <div class="box1">
-                            <h1>Crie sua primeira playlist</h1>
-                            <p>É facil, vamos te ajudar.</p>
-                            <input type="submit" value="Criar playlist"></input>
+            <div id="resto-menu">
+                <a id="biblioteca" href="homepage.html"><img id="icone" src="../img/biblioteca.png" alt="">
+                    <div id="bibli-soma">
+                        <h3>Sua Biblioteca</h3>
+                        <img id="sinal-mais" src="../img/sinal-mais.png" alt="" title="Criar playlist ou pasta">
+                    </div>
+                </a>
+                    <div class="scroll">
+                        <div id="playlist">
+                            <h2>Crie sua primeira playlist</h2>
+                            <h3>É fácil, vamos te ajudar.</h3>
+                            <button>Criar playlist</button>
                         </div>
-                        <div class="box1">
-                            <h1>Que tal seguir um podcast novo?</h1>
-                            <p>Avisaremos voce sobre novos episodios.</p>
-                            <input type="submit" value="Explore podcast"></input>
+                        <div id="podcast">
+                            <h2>Que tal seguir um podcast novo?</h2>
+                            <h3>Avisaremos você sobre novos episódios.</h3>
+                            <button>Explore podcasts</button>
                         </div>
                     </div>
-                </li>
-            </ul>
-            <div class="footer">
-                <ul>
-                    <li>
-                        <a href="">Legal</a>
-                        <a href="">Segurança e Centro de privaciade</a>
-                    </li>
-                    <li>
-                        <a href="">Politicas de Privacidade</a>
-                        <a href="">Cookies</a>
-                    </li>
-                    <li>
-                        <a href="">Sobre anuncios</a>
-                        <a href="">Acessibilidade</a>
-                        <a href="">Cookies</a>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="portugues">
-                <button>Português do Brasil</button>
-            </div>
-
-        </div>
-    </div>
-
-    <div id="menu3">
-        <div id="nav">
-            <div class="setas">
-                <img id="seta-esq" src="../img/seta-esq.png" alt="">
-                <img id="seta-dir" src="../img/seta-dir.png" alt="">
-            </div>
-            <div id="insc-ent">
-                <a href="">Inscrever-se</a>
-                <button>Entrar</button>
-            </div>
-        </div>
-        <div class="background">
-            <div class="content">
-                <h1>Artista verificado</h1>
-                <h2>Coldplay</h2>
-                <p>75.981.291 ouvintes mensais</p>
-
-                <div class="div2">
-                    <div class="opcoes">
-                        <img id="player" src="../img/player.png" alt="">
-                        <button>Seguir</button>
-                        <img id="pontinhos" src="../img/tres_pontinhos.png" alt="">
-                    </div>
-                    <div class="musicas">
-                        <h1>Populares</h1>
-                        <div class="musica1">
-                            <p>1</p>
-                            <img src="" alt="">
-                            <p>Yellow</p>
-                            <p>2.295.159.016</p>
-                            <p>4:32</p>
-                        </div>
-                    </div>
+                <div id="footer">
+                    <ul>
+                        <li>Legal &nbsp&nbsp&nbsp&nbsp&nbsp Segurança e Centro de privacidade</li>
+                        <li>Política de privacidade &nbsp&nbsp&nbsp Cookies &nbsp&nbsp&nbsp Sobre anúncios</li>
+                        <li>Acessibilidade</li>
+                        <li>Cookies</li>
+                    </ul>
+    
+                    <button>
+                        <img src="../img/globo.png" alt="">
+                        <h3>Português do Brasil</h3>
+                    </button>
                 </div>
             </div>
         </div>
-    </div>
-    </div>
-    </div>
+        <div id="principal">
+            <div id="nav">
+                <img id="seta-esq" src="../img/seta-esq.png" alt="">
+                <img id="seta-dir" src="../img/seta-dir.png" alt="" title="Avançar">
+                <div id="insc-ent">
+                    <a href="">Inscrever-se</a>
+                    <button>Entrar</button>
+                </div>
+            </div>
+            <div class="coldplay">
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/4gzpq5DPGxSnKTe4SA8HAU?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+        </div>
+        <div class="preview">
+            <div class="text">
+                <h4>Testar o Premmium de graça</h4>
+                <p>Inscreva-se para curtir música ilimitadas e podcast com alguns anuncios Não precisa de cartão de crédito.</p>
+            </div>
+        
+            <div class="button">
+                <button>Inscreva-se Grátis</button>
+            </div>
+        </div>
+    </main>
 </body>
-
 </html>

@@ -4,254 +4,346 @@
     font-family: "Gothan", sans-serif;
 }
 
-body {
-    display: flex; 
+main {
     background-color: black;
+    display: flex;
+}
+
+#menu {
+    display: flex;
+    flex-direction: column;
+    width: 24%;
     height: 100vh;
 }
 
-.menu {
-    width: 370px;
-    background-color: black;
-    padding: 3px;
+#comeco-menu {
+    margin-left: 10px;
+    margin-top: 10px;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background-color: rgb(20, 20, 20);
 }
 
-.menu1 {
-    background: #121212;
-    border-radius: 10px;
-    padding: 23px 23px;
-    margin-top: 5px;
-    margin-bottom: 7px;
+#comeco-menu h3 {
+    color: rgb(184, 184, 184);
+    margin-left: 20px;
+    margin-top: 7px;
+    font-size: 17px;
 }
 
-.menu1 .logo {
-    width: 80px;
+#comeco-menu #icone:hover {
+    filter: brightness(1.0);
 }
 
-.menu1 .logo img {
-    width: 100%;
-}
-
-.menu1 ul {
-    list-style: none;
-}
-
-.menu1 ul a {
+a {
     text-decoration: none;
 }
 
-.menu1 li {
+
+.logo #logo-spotify {
+    width: 90px;
+    margin-bottom: 32px;
+    margin-top: 20px;
+    margin-left: 15px;
+}
+
+.logo #logo-spotify img {
+    width: 55%;
+    margin-bottom: 40px;
+}
+
+#icone {
+    width: 25px;
+    margin-left: 14px;
+    filter: brightness(0.7);
+}
+
+#inicio {
+    display: flex;
+    flex-direction: row;
+    margin-top: -20px;
+}
+
+#buscar {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#resto-menu {
+    padding: 0 0 30px;
+    margin-left: 10px;
     margin-top: 10px;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background-color: rgb(20, 20, 20);
 }
 
-.menu2 {
-    background: #121212;
-    border-radius: 10px;
-    padding: 23px 23px;
-    margin-bottom: 5px;
+#resto-menu #bibli-soma {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 82%;
 }
 
-.menu2 ul {
-    list-style: none;
-}
-
-.menu2 ul a {
-    text-decoration: none;
-}
-
-.menu2 li {
-    margin-top: 10px;
-}
-
-#inicio,
-#buscar,
 #biblioteca {
-    color: #A7A7A7;
-    font-weight: 600;
-    font-family: 'Gothan', sans-serif;
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#biblioteca h3 {
+    color: rgb(184, 184, 184);
+    margin-left: 15px;
+    margin-top: 7px;
+    font-size: 17px;
+}
+
+#sinal-mais {
+    width: 18px;
+    height: 18px;
+    margin-top: 5px;
+}
+
+#sinal-mais:hover {
+    background-color: rgb(47, 47, 47);
+    border-radius: 10px;
+}
+
+.scroll {
+    height: 220px;
+    overflow: auto;
+}
+
+.scroll::-webkit-scrollbar {
+    background: transparent;
+}
+
+#playlist {
+    padding: 5px;
+    background-color: #242424;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 7px;
+}
+
+#podcast {
+    padding: 5px;
+    background-color: #242424;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 7px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+#playlist h2,
+#podcast h2 {
+    padding: 5px;
     font-size: 15px;
+    margin-top: 5px;
     margin-left: 10px;
 }
 
-#biblioteca::after {
-    content: '+';
-    float: right;
-    text-align: center;
+#playlist h3,
+#podcast h3 {
     padding: 5px;
-    border-radius: 50%;
-    font-size: 20px;
+    font-size: 15px;
+    margin-top: 5px;
+    margin-left: 10px;
+    font-weight: 300;
 }
 
-.box1 h1,
-p {
-    margin: 12px 0;
-    font-size: medium;
-    color: white;
-}
-
-.box1 input {
-    border: 0;
-    outline: 0;
-    padding: 8px 20px;
+#playlist button {
+    border-radius: 50px;
+    width: 110px;
+    height: 30px;
+    margin-left: 10px;
+    margin-top: 15px;
     color: black;
-    font-weight: bolder;
-    font-family: 'Gothan', sans-serif;
     font-size: 15px;
-    border-radius: 20px;
-    background: white;
-}
-
-.scrol {
-    height: 120px;
-    overflow-y: auto;
-}
-
-.scrol::-webkit-scrollbar {
-    background: transparent;
-}
-
-.scrol::-webkit-scrollbar-thumb {
-    background: transparent;
-    width: 2px;
-}
-
-.scrol:hover::-webkit-scrollbar-thumb {
-    background: #5c5b5b;
-    width: 2px;
-}
-
-.box1 {
-    background: #242424;
-    padding: 10px 25px;
-    border-radius: 10px;
+    font-weight: bold;
+    font-family: "Gotham", sans-serif;
     margin-bottom: 10px;
+    border: none;
 }
 
-.footer ul {
-    list-style-type: none;
-    margin-top: 20px;
-}
-
-.footer ul li {
-    padding: 0 12px;
-    padding-bottom: 8px;
-}
-
-.footer ul li a {
-    margin: 0 5px;
-    font-family: 'Gothan', sans-serif;
-    font-size: 11px;
-    text-decoration: none;
-    color: #A7A7A7;
-}
-
-.footer ul li a:hover {
-    text-decoration: underline;
-}
-
-.portugues {
-    padding: 20px;
-}
-
-.portugues button {
-    border: 0;
-    outline: 0;
-    padding: 10px 20px;
-    color: white;
-    font-weight: bolder;
-    font-family: 'Gothan', sans-serif;
-    background: transparent;
+#podcast button {
+    border-radius: 50px;
+    width: 150px;
+    height: 30px;
+    margin-left: 10px;
+    margin-top: 15px;
+    color: black;
     font-size: 15px;
-    border-radius: 20px;
+    font-weight: bold;
+    font-family: "Gotham", sans-serif;
+    margin-bottom: 10px;
+    border: none;
+}
+
+#footer {
+    width: 250px;
+    color: gray;
+    font-size: 13px;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+#footer ul li {
+    list-style-type: none;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 11px;
+    padding: 5px;
+}
+
+#footer ul li:hover {
+    cursor: pointer;
+}
+
+#footer button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+    background-color: rgb(20, 20, 20);
+    margin-top: 25px;
+    border-radius: 50px;
+    border: 1px solid gray;
+}
+
+#footer button img {
+    width: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#footer button h3 {
+    margin-left: 10px;
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+#footer button:hover {
     border: 1px solid white;
 }
 
-#menu3 {
+button {
+    cursor: pointer;
+}
+
+#comeco-menu h3,
+#biblioteca h3 {
+    font-weight: 400;
+}
+
+#comeco-menu h3:hover,
+#biblioteca h3:hover {
+    color: white;
+}
+
+#principal {
     width: 77%;
     color: white;
-    margin-left: 5px;
+    margin-left: 10px;
     margin-top: 10px;
     margin-right: 10px;
     border-radius: 10px;
 }
 
 #nav {
-    display: flex;
     position: fixed;
-    justify-content: space-between;
-    background-color: rgba(20, 20, 20, 0.500);
-    width: 65%;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 60px;
+    width: 100%;
     border-top-left-radius: 7px;
     border-top-right-radius: 7px;
 }
 
-.setas {
-    margin: 16px;
-}
-
-#seta-esq, #seta-dir {
-    padding: 5px;
-    background: rgba(0, 0, 0, 0.500);
-    border-radius: 50%;
-    filter: brightness(0.5);
-    width: 20px;
+#seta-esq {
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 10px;
     cursor: not-allowed;
 }
 
-#insc-ent a {
-    font-size: 14px;
-    text-decoration: none;
-    margin-right: 10px;
+#seta-esq,
+#seta-dir {
+    filter: brightness(0.5);
+    width: 20px;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+}
+
+#seta-dir {
+    cursor: pointer;
+}
+
+#principal #nav a {
     color: rgb(170, 170, 170);
     font-weight: 600;
 }
 
-#insc-ent button {
-    padding: 15px 30px;
+#principal #nav button {
+    width: 100px;
+    height: 50px;
     border-radius: 50px;
-    margin: 5px 10px;
+    margin-left: 20px;
     font-size: 15px;
     font-weight: bold;
+    margin-bottom: 5px;
+    border: none;
 }
 
-.background{
-    display: flex;
-    position: static;
-    border-radius: 7px;
+#insc-ent {
+    margin-left: 950px;
+    margin-top: -50px;
+}
+
+.coldplay iframe {
     width: 100%;
-    height: 100%;
-    background-color: red;
+    height: 687px;
 }
 
-.content h1{
-    margin-left: 12px;
-    margin-top: 70px;
-    font-size: 15px;
+.preview {
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(to right, #ae2896, #509bf5);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 12px 10px;
+}
+
+.preview h4 {
+    font-size: 13px;
     font-weight: 600;
-    font-family: 'Gothan', sans-serif;
+    margin-bottom: 10px;
+    color: #fff;
 }
 
-.content h2{
-    margin-left: 12px;
-    font-size: 110px;
-    font-family: 'Gothan',sans-serif;
+.preview p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
 }
 
-.content p{
-    margin-left: 12px;
-    font-size: 15px;
-    font-family: 'Gothan',sans-serif;
-}
-
-.div2{
-    display: flex;
-    justify-content: left;
-    flex-direction: column;
-    width: 100%;
-    background:  purple;
-}
-
-.div2 img,button{
-    margin-right: 10px;
-    width: 45px;
+.preview button {
+    padding: 12px 30px;
+    border: 0;
+    outline: 0;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #000;
 }
