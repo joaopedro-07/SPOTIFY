@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/homepage.css">
     <link rel="shortcut icon" href="../img/spotify-verde.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/d613850138.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/lib5/font-awesome/6.0.0-beta3/css/all.min.css">
     <title>Spotify - Web player: música para todas as pessoas</title>
 </head>
 <body>
@@ -22,10 +24,11 @@
                 <a id="biblioteca" href="homepage.html"><img id="icone" src="../img/biblioteca.png" alt="">
                     <div id="bibli-soma">
                         <h3>Sua Biblioteca</h3>
+                        <span id="span-bibli"></span>
                         <img id="sinal-mais" src="../img/sinal-mais.png" alt="" title="Criar playlist ou pasta">
                     </div>
                 </a>
-                    <div class="scroll">
+                    <div id="scroll-menu">
                         <div id="playlist">
                             <h2>Crie sua primeira playlist</h2>
                             <h3>É fácil, vamos te ajudar.</h3>
@@ -57,10 +60,11 @@
                 <img id="seta-esq" src="../img/seta-esq.png" alt="">
                 <img id="seta-dir" src="../img/seta-dir.png" alt="" title="Avançar">
                 <div id="insc-ent">
-                    <a href="login.html">Inscrever-se</a>
-                    <button >Entrar</button>
+                    <a id="inscrever" href="login.html">Inscrever-se</a>
+                    <button><a id="botao-entrar" href="login.html">Entrar</a></button>
                 </div>
             </div>
+            <div id="scroll-principal">
             <div id="artistas-pop">
                 <div class="title-subtitle">
                     <h2>Artistas populares</h2>
@@ -69,26 +73,31 @@
                 <div class="artistas">
                     <div class="info-artista">
                         <img class="img-artista" src="../img/zenetoecristiano.jpg" alt="">
+                        <a href="player.html"><button class="botao-play"><i class="fas fa-play"></i></button></a>
                         <h3 class="nome-artista">Zé Neto & Cristiano</h3>
                         <h4 class="desc-artista">Artista</h4>
                     </div>
                     <div class="info-artista">
                         <img class="img-artista" src="../img/henriqueejuliano.jpg" alt="">
+                        <a href="player.html"><button class="botao-play"><i class="fas fa-play"></i></button></a>
                         <h3 class="nome-artista">Henrique & Juliano</h3>
                         <h4 class="desc-artista">Artista</h4>
                     </div>
                     <div class="info-artista">
                         <img class="img-artista" src="../img/jorgeemateus.jpg" alt="">
+                        <a href="player.html"><button class="botao-play"><i class="fas fa-play"></i></button></a>
                         <h3 class="nome-artista">Jorge & Mateus</h3>
                         <h4 class="desc-artista">Artista</h4>
                     </div>
                     <div class="info-artista">
                         <img class="img-artista" src="../img/maiaraemaraisa.jpg" alt="">
+                        <a href="player.html"><button class="botao-play"><i class="fas fa-play"></i></button></a>
                         <h3 class="nome-artista">Maiara & Maraisa</h3>
                         <h4 class="desc-artista">Artista</h4>
                     </div>
                     <div class="info-artista">
                         <img class="img-artista" src="../img/matheusekauan.jpg" alt="">
+                        <a href="player.html"><button class="botao-play"><i class="fas fa-play"></i></button></a>
                         <h3 class="nome-artista">Matheus & Kauan</h3>
                         <h4 class="desc-artista">Artista</h4>
                     </div>
@@ -127,10 +136,11 @@
                     </div>
                 </div>
             </div>
+            </div>
         <div class="preview">
             <div class="text">
                 <h4>Testar o Premmium de graça</h4>
-                <p>Inscreva-se para curtir música ilimitadas e podcast com alguns anuncios Não precisa de cartão de crédito.</p>
+                <p>Inscreva-se para curtir música ilimitadas e podcast com alguns anúncios. Não precisa de cartão de crédito.</p>
             </div>
         
             <div class="button">

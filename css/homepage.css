@@ -22,17 +22,31 @@ main {
     border-radius: 7px;
     display: flex;
     flex-direction: column;
-    color: white;
     background-color: rgb(20, 20, 20);
 }
 
 #comeco-menu h3 {
-    color: rgb(184, 184, 184);
-    margin-left: 20px;
+    margin-left: 15px;
     margin-top: 7px;
     font-size: 17px;
 }
 
+#comeco-menu #icone:hover, #icone:hover + h3 {
+    color: white;
+}
+
+#comeco-menu h3:hover, h3:hover + img {
+    color: white;
+}
+
+#comeco-menu a {
+    color: rgb(170, 170, 170);
+}
+
+#comeco-menu a:hover {
+    color: white;
+    filter: brightness(1.0);
+}
 #comeco-menu #icone:hover {
     filter: brightness(1.0);
 }
@@ -64,6 +78,7 @@ a {
     display: flex;
     flex-direction: row;
     margin-top: -20px;
+    color: rgb(170, 170, 170);
 }
 
 #buscar {
@@ -71,6 +86,7 @@ a {
     flex-direction: row;
     margin-top: 20px;
     margin-bottom: 20px;
+    color: rgb(170, 170, 170);
 }
 
 #resto-menu {
@@ -109,19 +125,30 @@ a {
     width: 18px;
     height: 18px;
     margin-top: 5px;
+    transition: transform 50ms ease-in-out;
 }
 
 #sinal-mais:hover {
     background-color: rgb(47, 47, 47);
     border-radius: 10px;
+    transform: scale(1.2);
 }
 
-.scroll {
+#scroll-menu {
     height: 220px;
     overflow: auto;
 }
 
-.scroll::-webkit-scrollbar {
+#scroll-menu::-webkit-scrollbar {
+    background: transparent;
+}
+
+#scroll-principal {
+    height: 780px;
+    overflow: auto;
+}
+
+#scroll-principal::-webkit-scrollbar {
     background: transparent;
 }
 
@@ -172,6 +199,7 @@ a {
     font-family: "Gotham", sans-serif;
     margin-bottom: 10px;
     border: none;
+    transition: transform 50ms ease-in-out;
 }
 
 #podcast button {
@@ -186,6 +214,11 @@ a {
     font-family: "Gotham", sans-serif;
     margin-bottom: 10px;
     border: none;
+    transition: transform 50ms ease-in-out;
+}
+
+#podcast button:hover, #playlist button:hover {
+    transform: scale(1.05);
 }
 
 #footer {
@@ -287,25 +320,36 @@ button {
     cursor: pointer;
 }
 
-#principal #nav a {
+#principal #nav #inscrever {
     color: rgb(170, 170, 170);
     font-weight: 600;
+    margin-top: 18px;
 }
 
 #principal #nav button {
-    width: 100px;
-    height: 50px;
+    width: 105px;
+    height: 48px;
     border-radius: 50px;
     margin-left: 20px;
+    margin-top: 3px;
     font-size: 15px;
     font-weight: bold;
-    margin-bottom: 5px;
     border: none;
+    transition: transform 50ms ease-in-out;
+}
+
+#principal #nav button:hover {
+    transform: scale(1.05);
+}
+
+#principal #nav button #botao-entrar {
+    color: black;
 }
 
 #insc-ent {
-    margin-left: 950px;
+    margin-left: 880px;
     margin-top: -50px;
+    display: flex;
 }
 
 #artistas-pop {
@@ -443,10 +487,6 @@ button {
     margin-top: -800px;
 }
 
-.fa fa-play {
-    
-}
-
 .preview {
     display: flex;
     justify-content: space-between;
@@ -479,4 +519,30 @@ button {
     font-size: 14px;
     font-weight: 600;
     color: #000;
+}
+
+.botao-play {
+    position: absolute;
+    border: none;
+    background-color: #1db954;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 140px;
+    margin-top: -60px;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+}
+
+.botao-play i {
+    color: black;
+    font-size: 20px;
+}
+
+.info-artista:hover .botao-play {
+    display: flex;
+    opacity: 1;
 }
