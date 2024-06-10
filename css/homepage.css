@@ -38,7 +38,7 @@ main {
     margin-bottom: 40px;
 }
 
-#icone {
+.icone {
     width: 25px;
     margin-left: 14px;
     filter: brightness(0.7);
@@ -234,7 +234,7 @@ button {
 }
 
 .img-artista {
-    width: 210px;
+    width: 195px;
     border-radius: 100px;
 }
 
@@ -246,7 +246,8 @@ button {
 .info-artista {
     margin-top: 15px;
     margin-left: 10px;
-    padding-left: 5px;
+    border-radius: 10px;
+    padding: 10px;
 }
 
 .nome-artista {
@@ -266,7 +267,8 @@ button {
 }
 
 .img-album {
-    width: 210px;
+    width: 195px;
+    border-radius: 5px;
 }
 
 #albuns-pop h2 {
@@ -277,6 +279,7 @@ button {
 .info-album {
     margin-top: 15px;
     margin-left: 20px;
+    padding-left: ;
 }
 
 .nome-album {
@@ -365,10 +368,26 @@ button {
     border-radius: 10px;
 }
 
-#comeco-menu #icone:hover {
+#comeco-menu .icone:hover {
     filter: brightness(1.0);
 }
 
 .info-artista:hover {
     background-color: rgb(30, 30, 30);
+    cursor: pointer;
+}
+
+.info-album:hover {
+    background-color: rgb(30, 30, 30);
+    cursor: pointer;
+}
+
+.play {
+    width: 50px;
+    border-radius: 100px;
+    margin-top: -800px;
+}
+
+.fa fa-play {
+    
 }
