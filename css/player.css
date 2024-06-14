@@ -271,7 +271,6 @@ button {
     margin-top: 20px;
     margin-left: 20px;
     margin-right: 10px;
-    cursor: not-allowed;
 }
 
 #seta-esq,
@@ -284,7 +283,7 @@ button {
 }
 
 #seta-dir {
-    cursor: pointer;
+    cursor: not-allowed;
 }
 
 #principal #nav a {
