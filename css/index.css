@@ -298,3 +298,7 @@ footer h1, a {
     font-size: 11px;
     font-family: 'Gotham', sans-serif;
 }
+
+.continuar, .telefone {
+    cursor: pointer;
+}
