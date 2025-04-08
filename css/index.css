@@ -8,7 +8,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 139vh;
+    height: 170vh;
     background: linear-gradient(180deg, hsla(0, 0%, 0%, 0.85), black);
 }
 
@@ -103,7 +103,7 @@ form {
     margin: 0 auto;
 }
 
-label{
+label {
     width: 100%;
     text-align: left;
     margin-top: 10px;
@@ -165,7 +165,7 @@ input[type="password"]:focus {
     opacity: 0;
 }
 
-.lembrar input[type="checkbox"] + label {
+.lembrar input[type="checkbox"]+label {
     width: 32px;
     height: 16px;
     background: #727272;
@@ -175,7 +175,7 @@ input[type="password"]:focus {
     box-sizing: border-box;
 }
 
-.lembrar input[type="checkbox"]:checked + label::after {
+.lembrar input[type="checkbox"]:checked+label::after {
     transform: translateX(calc(100% + 5px));
 }
 
@@ -201,15 +201,15 @@ input[type="password"]:focus {
     border-radius: 50ex;
 }
 
-.lembrar input:active + label {
+.lembrar input:active+label {
     background-color: #727272;
 }
 
-.lembrar input:checked + label {
+.lembrar input:checked+label {
     background-color: #1ed760;
 }
 
-.lembrar input:checked + label:hover {
+.lembrar input:checked+label:hover {
     background-color: #1ed760;
 }
 
@@ -234,6 +234,7 @@ input[type="submit"] {
     font-family: 'Gotham', sans-serif;
     font-weight: 550;
     font-size: 15px;
+    cursor: pointer;
 }
 
 .botao-senha {
@@ -254,7 +255,7 @@ input[type="submit"] {
     font-size: 14.5px;
 }
 
-.botao-senha a:hover{
+.botao-senha a:hover {
     margin-top: 35px;
     color: #1ed760;
     font-family: 'Gotham', sans-serif;
@@ -292,13 +293,15 @@ footer {
     background-color: #121212;
 }
 
-footer h1, a {
+footer h1,
+a {
     text-align: center;
     color: #A7A7A7;
     font-size: 11px;
     font-family: 'Gotham', sans-serif;
 }
 
-.continuar, .telefone {
+.continuar,
+.telefone {
     cursor: pointer;
 }
